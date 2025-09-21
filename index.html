@@ -66,19 +66,17 @@
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
       margin-bottom: 20px;
+      background: #000; /* fondo detrás de fotos */
     }
 
     .galeria img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  position: absolute;
-  opacity: 0;
-  animation: fade 15s infinite;
-}
-
-}
-
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* muestra la imagen completa sin recortar */
+      background-color: #000;
+      position: absolute;
+      opacity: 0;
+      animation: fade 15s infinite;
     }
 
     .galeria img:nth-child(1) { animation-delay: 0s; }
@@ -106,7 +104,7 @@
   <h1>Feliz día mi amor ❤️</h1>
   <p>Te amo con toda mi alma.<br>
   Tú y Dulce María son el motor de mi vida.<br>
-  Gracias por estar a mi lado, feliz dia de amor y amistad, LAS AMO con mi alma 💕</p>
+  Gracias por estar a mi lado, feliz día de amor y amistad, LAS AMO con mi alma 💕</p>
 
   <div class="corazon">💖</div>
 
@@ -117,11 +115,10 @@
     <img src="f3.jpeg" alt="Recuerdo 3">
   </div>
 
- <audio autoplay loop controls>
-  <source src="aguacate.mp3" type="audio/mpeg">
-  Tu navegador no soporta audio.
-</audio>
-
+  <audio autoplay loop controls>
+    <source src="aguacate.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
 
   <!-- Corazones flotando -->
   <div class="heart" style="left:10%;">💘</div>
