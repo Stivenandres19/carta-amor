@@ -56,25 +56,26 @@
       100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
     }
 
-    /* Galería */
+    /* Carrusel */
     .galeria {
       position: relative;
-      width: 80%;
+      width: 90%;
       max-width: 800px;
-      height: 500px;
+      aspect-ratio: 16/9; /* mantiene proporción adaptable */
       overflow: hidden;
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
       margin-bottom: 20px;
-      background: #000; /* fondo detrás de fotos */
+      background: #000;
     }
 
     .galeria img {
       width: 100%;
       height: 100%;
-      object-fit: contain; /* muestra la imagen completa sin recortar */
-      background-color: #000;
+      object-fit: contain; /* muestra la imagen completa */
       position: absolute;
+      top: 0;
+      left: 0;
       opacity: 0;
       animation: fade 15s infinite;
     }
@@ -108,7 +109,7 @@
 
   <div class="corazon">💖</div>
 
-  <!-- Galería de fotos -->
+  <!-- Carrusel de fotos -->
   <div class="galeria">
     <img src="f1.jpg" alt="Recuerdo 1">
     <img src="f2.jpeg" alt="Recuerdo 2">
@@ -131,11 +132,6 @@
 
 </body>
 </html>
-
-
-
-
-
 
 
 
