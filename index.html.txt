@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para mi Amor ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.4em;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+
+    .corazon {
+      font-size: 4em;
+      animation: latido 1s infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes latido {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+    /* Corazones flotando */
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 2em;
+      animation: subir 8s linear infinite;
+    }
+
+    @keyframes subir {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+    }
+
+    /* Galería */
+    .galeria {
+      position: relative;
+      width: 80%;
+      max-width: 500px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      position: absolute;
+      opacity: 0;
+      animation: fade 15s infinite;
+    }
+
+    .galeria img:nth-child(1) { animation-delay: 0s; }
+    .galeria img:nth-child(2) { animation-delay: 5s; }
+    .galeria img:nth-child(3) { animation-delay: 10s; }
+
+    @keyframes fade {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 1em;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Feliz día mi amor ❤️</h1>
+  <p>Te amo con toda mi alma.<br>
+  Tú y Dulce María son el motor de mi vida.<br>
+  Gracias por estar a mi lado 💕</p>
+
+  <div class="corazon">💖</div>
+
+  <!-- Galería de fotos -->
+  <div class="galeria">
+    <img src="foto1.jpg" alt="Recuerdo 1">
+    <img src="foto2.jpg" alt="Recuerdo 2">
+    <img src="foto3.jpg" alt="Recuerdo 3">
+  </div>
+
+  <!-- Música de fondo -->
+  <audio autoplay loop>
+    <source src="EL AGUACATE.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <!-- Corazones flotando -->
+  <div class="heart" style="left:10%;">💘</div>
+  <div class="heart" style="left:30%;">💝</div>
+  <div class="heart" style="left:50%;">💖</div>
+  <div class="heart" style="left:70%;">💕</div>
+  <div class="heart" style="left:90%;">💞</div>
+
+  <footer>Con todo mi amor 💌</footer>
+
+</body>
+</html>
